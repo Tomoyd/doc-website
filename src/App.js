@@ -8,7 +8,7 @@ function App() {
       <Router>
             <Switch>
               <Route
-                  path="/login"
+                  path="/react-manage-app/build/login"
                   component={Login}
               >
               </Route>
