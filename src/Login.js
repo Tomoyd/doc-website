@@ -12,7 +12,7 @@ const tailLayout = {
 const Login = ({history}) => {
     const onFinish = values => {
         localStorage.setItem("isAuth",true)
-        history.push("/react-manage-app/build/")
+        history.push("/")
     };
 
     const onFinishFailed = errorInfo => {
