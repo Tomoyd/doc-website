@@ -5,7 +5,7 @@ import {Route} from "react-router-dom"
 import { Layout, Menu, Breadcrumb } from 'antd';
 import TableComponent from "./pages/TableComponent";
 const { Header, Content, Footer } = Layout;
-const homepage='/react-manage-app/build/'
+const homepage=''
 function Home(props) {
     const menuList=["表格","图表","ThreeJS"];
     const [breadcrumb,setBreadcrumb]=useState(menuList[0]);
@@ -38,7 +38,7 @@ function Home(props) {
                         <Breadcrumb.Item>{breadcrumb}</Breadcrumb.Item>
                     </Breadcrumb>
                     <div className="site-layout-content">
-                       <Route path={`${homepage}`} exact component={TableComponent}/>
+                       <Route path={`${homepage}/`} exact component={TableComponent}/>
                        <Route path={`${homepage}/表格`} component={TableComponent}/>
                     </div>
                 </Content>

@@ -8,11 +8,11 @@ function App() {
       <Router>
             <Switch>
               <Route
-                  path="/react-manage-app/build/login"
+                  path="login"
                   component={Login}
               >
               </Route>
-              <PrivateRoute path="/react-manage-app/build/" component={Home}/>
+              <PrivateRoute path="/" component={Home}/>
             </Switch>
       </Router>
   );
@@ -23,7 +23,7 @@ function PrivateRoute({children,...rest}) {
         <Route
             {...rest}
             render={()=>{
-                return localStorage.getItem("isAuth") ? (children):(<Redirect to="/react-manage-app/build/login"/>)
+                return localStorage.getItem("isAuth") ? (children):(<Redirect to="/login"/>)
             }}
         >
         </Route>
