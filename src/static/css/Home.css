@@ -1,0 +1,17 @@
+.site-layout-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 60vmin;
+}
+.layout .logo {
+    height:36px;
+    /*background: rgba(255, 255, 255, 0.1);*/
+    margin: 14px 14px 14px 0;
+    float: left;
+    font-size:0;
+    text-align: center;
+    line-height: 2;
+}
+img{
+    max-height:100%;
+}
