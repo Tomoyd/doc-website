@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-manage-app/build/static/css/main.cb1466a4.chunk.css",
+    "main.js": "/react-manage-app/build/static/js/main.b2233184.chunk.js",
+    "runtime-main.js": "/react-manage-app/build/static/js/runtime-main.4d4f6bd1.js",
+    "static/css/2.d72daecf.chunk.css": "/react-manage-app/build/static/css/2.d72daecf.chunk.css",
+    "static/js/2.c0da25ad.chunk.js": "/react-manage-app/build/static/js/2.c0da25ad.chunk.js",
+    "index.html": "/react-manage-app/build/index.html",
+    "precache-manifest.8ef7954fdc9b78e5ac441878c56e9d4b.js": "/react-manage-app/build/precache-manifest.8ef7954fdc9b78e5ac441878c56e9d4b.js",
+    "service-worker.js": "/react-manage-app/build/service-worker.js",
+    "static/js/2.c0da25ad.chunk.js.LICENSE.txt": "/react-manage-app/build/static/js/2.c0da25ad.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/react-manage-app/build/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4d4f6bd1.js",
+    "static/css/2.d72daecf.chunk.css",
+    "static/js/2.c0da25ad.chunk.js",
+    "static/css/main.cb1466a4.chunk.css",
+    "static/js/main.b2233184.chunk.js"
+  ]
+}

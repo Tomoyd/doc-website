@@ -38,7 +38,7 @@ function Home(props) {
                         <Breadcrumb.Item>{breadcrumb}</Breadcrumb.Item>
                     </Breadcrumb>
                     <div className="site-layout-content">
-                        <Route path="/" exact component={TableComponent}/>
+                       <Route path="/" exact component={TableComponent}/>
                        <Route path="/表格" component={TableComponent}/>
                     </div>
                 </Content>
