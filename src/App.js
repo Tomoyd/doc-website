@@ -13,6 +13,7 @@ function App() {
               >
               </Route>
               <PrivateRoute path="/" component={Home}/>
+              <PrivateRoute path="/react-manage-app/build/" component={Home}/>
             </Switch>
       </Router>
   );
