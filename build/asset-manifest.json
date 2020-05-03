@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "./react-manage-app/build/static/css/main.2c5a6835.chunk.css",
-    "main.js": "./react-manage-app/build/static/js/main.ce9693ac.chunk.js",
+    "main.js": "./react-manage-app/build/static/js/main.d0767921.chunk.js",
     "runtime-main.js": "./react-manage-app/build/static/js/runtime-main.914762a7.js",
     "static/css/2.d72daecf.chunk.css": "./react-manage-app/build/static/css/2.d72daecf.chunk.css",
     "static/js/2.c1c236a6.chunk.js": "./react-manage-app/build/static/js/2.c1c236a6.chunk.js",
     "index.html": "./react-manage-app/build/index.html",
-    "precache-manifest.421270882b9a9c9c9f31071ef3c42a84.js": "./react-manage-app/build/precache-manifest.421270882b9a9c9c9f31071ef3c42a84.js",
+    "precache-manifest.23b1910a2672de7ec7e6e5157d1ba223.js": "./react-manage-app/build/precache-manifest.23b1910a2672de7ec7e6e5157d1ba223.js",
     "service-worker.js": "./react-manage-app/build/service-worker.js",
     "static/js/2.c1c236a6.chunk.js.LICENSE.txt": "./react-manage-app/build/static/js/2.c1c236a6.chunk.js.LICENSE.txt",
     "static/media/logo.svg": "./react-manage-app/build/static/media/logo.5d5d9eef.svg"
@@ -16,6 +16,6 @@
     "static/css/2.d72daecf.chunk.css",
     "static/js/2.c1c236a6.chunk.js",
     "static/css/main.2c5a6835.chunk.css",
-    "static/js/main.ce9693ac.chunk.js"
+    "static/js/main.d0767921.chunk.js"
   ]
 }
