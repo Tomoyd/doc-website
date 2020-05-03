@@ -26,7 +26,7 @@ function Home(props) {
                     >
                         {
                             menuList.map(item=>{
-                                return  <Menu.Item key={"/"+item}>{item}</Menu.Item>
+                                return  <Menu.Item key={homepage+"/"+item}>{item}</Menu.Item>
                             })
                         }
                     </Menu>
