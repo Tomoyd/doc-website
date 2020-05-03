@@ -10,7 +10,7 @@ function Home(props) {
     const homepage="/react-manage-app/build"
     const [breadcrumb,setBreadcrumb]=useState(menuList[0])
     const menuSelect=(params)=>{
-        props.history.push(params.key)
+        props.history.push(homepage+params.key)
         setBreadcrumb(params.key.substring(1))
     };
     return (
@@ -26,7 +26,7 @@ function Home(props) {
                     >
                         {
                             menuList.map(item=>{
-                                return  <Menu.Item key={homepage+"/"+item}>{item}</Menu.Item>
+                                return  <Menu.Item key={"/"+item}>{item}</Menu.Item>
                             })
                         }
                     </Menu>
