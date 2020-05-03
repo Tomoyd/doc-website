@@ -7,6 +7,7 @@ import TableComponent from "./pages/TableComponent";
 const { Header, Content, Footer } = Layout;
 function Home(props) {
     const menuList=["表格","图表","ThreeJS"];
+    const homepage="react-manage-app/build/"
     const [breadcrumb,setBreadcrumb]=useState(menuList[0])
     const menuSelect=(params)=>{
         props.history.push(params.key)
@@ -20,7 +21,7 @@ function Home(props) {
                         theme="dark"
                         mode="horizontal"
                         onSelect={menuSelect}
-                        defaultSelectedKeys={["/"+menuList[0]]}
+                        defaultSelectedKeys={[homepage+"/"+menuList[0]]}
                         style={{ lineHeight: '64px' }}
                     >
                         {
@@ -36,8 +37,8 @@ function Home(props) {
                         <Breadcrumb.Item>{breadcrumb}</Breadcrumb.Item>
                     </Breadcrumb>
                     <div className="site-layout-content">
-                       <Route path={`/`} exact component={TableComponent}/>
-                       <Route path={`/表格`} component={TableComponent}/>
+                       <Route path={`${homepage}/`} exact component={TableComponent}/>
+                       <Route path={`${homepage}/表格`} component={TableComponent}/>
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>React Manage App By Tomoyd </Footer>
