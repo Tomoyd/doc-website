@@ -8,11 +8,11 @@ function App(props) {
       <Router>
             <Switch>
                 <Route
-                    path="/login"
+                    path="/react-manage-app/build/login"
                     component={Login}
                 >
                 </Route>
-                <PrivateRoute path="/"  component={Home} />
+                <PrivateRoute path="/react-manage-app/build"  component={Home} />
             </Switch>
       </Router>
   );
@@ -21,7 +21,7 @@ function App(props) {
 function PrivateRoute({children,...rest}) {
     console.log(localStorage.getItem("isAuth"))
     if(!localStorage.getItem("isAuth")){
-        return (<Redirect to="/login"/>)
+        return (<Redirect to="/react-manage-app/build/login"/>)
     }
     return(
         <Route
