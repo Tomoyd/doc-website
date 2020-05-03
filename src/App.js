@@ -12,7 +12,8 @@ function App(props) {
                     component={Login}
                 >
                 </Route>
-                <PrivateRoute path="/react-manage-app/build"  component={Home} />
+                <PrivateRoute path="/react-manage-app/build/"  component={Home} />
+                <PrivateRoute path="/"  component={Home} />
             </Switch>
       </Router>
   );
