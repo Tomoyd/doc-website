@@ -7,7 +7,7 @@ import TableComponent from "./pages/TableComponent";
 const { Header, Content, Footer } = Layout;
 function Home(props) {
     const menuList=["表格","图表","ThreeJS"];
-    const homepage="react-manage-app/build/"
+    const homepage="react-manage-app/build"
     const [breadcrumb,setBreadcrumb]=useState(menuList[0])
     const menuSelect=(params)=>{
         props.history.push(params.key)
