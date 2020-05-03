@@ -1,62 +1,59 @@
 import React from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
+import { Form, Input, Button, Checkbox ,Row,Col} from 'antd';
 import "./static/css/Login.css"
 const layout = {
-    labelCol: { span: 6 },
-    wrapperCol: { span: 16 },
+    wrapperCol: { span: 24 },
 };
 const tailLayout = {
-    wrapperCol: { offset: 8, span: 16 },
+    wrapperCol: {offset:0,span: 24 },
 };
-
 const Login = ({history}) => {
     const onFinish = values => {
-        localStorage.setItem("isAuth",true)
+        localStorage.setItem("isAuth",true);
         history.push("/")
     };
 
     const onFinishFailed = errorInfo => {
         console.log('Failed:', errorInfo);
     };
-
     return (
-        <div>
-        <div className="login-container">
+            <div className="container" >
+                <div className="login-title">
+                    登录
+                </div>
             <Form
+                className="login-container"
             {...layout}
             name="basic"
-            initialValues={{ remember: true }}
+            initialValues={{ remember: true ,layout: "vertical"}}
             onFinish={onFinish}
             onFinishFailed={onFinishFailed}
         >
             <Form.Item
-                label="Username"
+                {...layout}
                 name="username"
                 rules={[{ required: true, message: 'Please input your username!' }]}
             >
-                <Input />
+                <Input placeholder="请输入用户名"/>
             </Form.Item>
 
             <Form.Item
-                label="Password"
+                {...layout}
                 name="password"
                 rules={[{ required: true, message: 'Please input your password!' }]}
             >
-                <Input.Password />
+                <Input.Password placeholder="请输入密码" />
             </Form.Item>
 
-            <Form.Item {...tailLayout} name="remember" valuePropName="checked">
-                <Checkbox>Remember me</Checkbox>
-            </Form.Item>
+            <Form.Item  {...tailLayout}  valuePropName="checked" >
 
-            <Form.Item {...tailLayout}>
-                <Button type="primary" htmlType="submit">
-                    Submit
-                </Button>
+                        <Button type="primary" htmlType="submit">
+                            Submit
+                        </Button>
+                        <Checkbox style={{lineHeight:"32px",float:"right"}}>记住密码</Checkbox>
             </Form.Item>
         </Form>
-        </div>
-        </div>
+            </div>
     );
 };
 export default Login;

@@ -14,7 +14,6 @@ for (let i = 0; i < 10; i++) {
 }
 
 class TableComponent extends Component {
-
     deleteItem(index){
         let datas=this.state.data.slice()
         datas.splice(index,1)

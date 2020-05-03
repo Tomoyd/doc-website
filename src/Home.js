@@ -5,16 +5,14 @@ import {Route} from "react-router-dom"
 import { Layout, Menu, Breadcrumb } from 'antd';
 import TableComponent from "./pages/TableComponent";
 const { Header, Content, Footer } = Layout;
-const homepage=''
 function Home(props) {
     const menuList=["表格","图表","ThreeJS"];
-    const [breadcrumb,setBreadcrumb]=useState(menuList[0]);
+    const [breadcrumb,setBreadcrumb]=useState(menuList[0])
     const menuSelect=(params)=>{
         props.history.push(params.key)
         setBreadcrumb(params.key.substring(1))
     };
     return (
-        <div>
             <Layout className="layout">
                 <Header className="header">
                     <div className="logo"><img src={logo} className="App-logo" alt="logo" /></div>
@@ -44,7 +42,6 @@ function Home(props) {
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>React Manage App By Tomoyd </Footer>
             </Layout>
-        </div>
     );
 }
 
