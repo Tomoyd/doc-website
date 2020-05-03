@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input, Button, Checkbox ,Row,Col} from 'antd';
+import { Form, Input, Button, Checkbox } from 'antd';
 import "./static/css/Login.css"
 const layout = {
     wrapperCol: { span: 24 },

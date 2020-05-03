@@ -21,7 +21,7 @@ function Home(props) {
                         theme="dark"
                         mode="horizontal"
                         onSelect={menuSelect}
-                        defaultSelectedKeys={[homepage+"/"+menuList[0]]}
+                        defaultSelectedKeys={["/"+menuList[0]]}
                         style={{ lineHeight: '64px' }}
                     >
                         {
