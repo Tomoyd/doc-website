@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.2c5a6835.chunk.css",
-    "main.js": "./static/js/main.83f8d252.chunk.js",
-    "runtime-main.js": "./static/js/runtime-main.14f27764.js",
-    "static/css/2.d72daecf.chunk.css": "./static/css/2.d72daecf.chunk.css",
-    "static/js/2.61f10cb8.chunk.js": "./static/js/2.61f10cb8.chunk.js",
-    "index.html": "./index.html",
-    "precache-manifest.2842c110a9608c807bf468c434385d43.js": "./precache-manifest.2842c110a9608c807bf468c434385d43.js",
-    "service-worker.js": "./service-worker.js",
-    "static/js/2.61f10cb8.chunk.js.LICENSE.txt": "./static/js/2.61f10cb8.chunk.js.LICENSE.txt",
-    "static/media/logo.svg": "./static/media/logo.5d5d9eef.svg"
+    "main.css": "./react-manage-app/build/static/css/main.2c5a6835.chunk.css",
+    "main.js": "./react-manage-app/build/static/js/main.3c66e8f8.chunk.js",
+    "runtime-main.js": "./react-manage-app/build/static/js/runtime-main.914762a7.js",
+    "static/css/2.d72daecf.chunk.css": "./react-manage-app/build/static/css/2.d72daecf.chunk.css",
+    "static/js/2.c1c236a6.chunk.js": "./react-manage-app/build/static/js/2.c1c236a6.chunk.js",
+    "index.html": "./react-manage-app/build/index.html",
+    "precache-manifest.8e950495baad8dcb78a1a1feddbcaa6d.js": "./react-manage-app/build/precache-manifest.8e950495baad8dcb78a1a1feddbcaa6d.js",
+    "service-worker.js": "./react-manage-app/build/service-worker.js",
+    "static/js/2.c1c236a6.chunk.js.LICENSE.txt": "./react-manage-app/build/static/js/2.c1c236a6.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "./react-manage-app/build/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.14f27764.js",
+    "static/js/runtime-main.914762a7.js",
     "static/css/2.d72daecf.chunk.css",
-    "static/js/2.61f10cb8.chunk.js",
+    "static/js/2.c1c236a6.chunk.js",
     "static/css/main.2c5a6835.chunk.css",
-    "static/js/main.83f8d252.chunk.js"
+    "static/js/main.3c66e8f8.chunk.js"
   ]
 }
