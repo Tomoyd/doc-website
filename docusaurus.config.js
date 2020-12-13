@@ -1,0 +1,104 @@
+module.exports = {
+  title: "Tomoyd ",
+  tagline: "前端世界",
+  url: "https://tomoyd.github.io",
+  organizationName: "tomoyd", // Usually your GitHub org/user name.
+  projectName: "tomoyd.github.io",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/tomo.ico",
+  // Usually your repo name.
+  themeConfig: {
+    navbar: {
+      title: "Tomoyd",
+      logo: {
+        alt: "My Site Logo",
+        src: "img/tomo.png"
+      },
+      items: [
+        {
+          to: "docs/",
+          activeBasePath: "docs",
+          label: "文档",
+          position: "left"
+        },
+        { to: "blog", label: "博客", position: "left" },
+        {
+          href: "https://github.com/Tomoyd",
+          label: "GitHub",
+          position: "right"
+        }
+      ]
+    },
+    footer: {
+      style: "dark",
+      links: [
+        {
+          title: "文档",
+          items: [
+            {
+              label: "文档指南",
+              to: "JavaScript"
+            },
+            {
+              label: "说明",
+              to: "docs/doc2/"
+            }
+          ]
+        },
+        {
+          title: "社区",
+          items: [
+            {
+              label: "Stack Overflow",
+              href: "https://stackoverflow.com/questions/tagged/docusaurus"
+            },
+            {
+              label: "Discord",
+              href: "https://discordapp.com/invite/docusaurus"
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/docusaurus"
+            }
+          ]
+        },
+        {
+          title: "更多",
+          items: [
+            {
+              label: "博客",
+              to: "blog"
+            },
+            {
+              label: "GitHub",
+              href: "https://github.com/Tomoyd/my-blog"
+            }
+          ]
+        }
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Tomoyd, Inc. Built with Docusaurus.`
+    }
+  },
+  plugins: ["docusaurus-plugin-sass"],
+  presets: [
+    [
+      "@docusaurus/preset-classic",
+      {
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/tomoyd.github.io/master/"
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl: "https://github.com/tomoyd.github.io/master/blog"
+        },
+        theme: {
+          customCss: require.resolve("./src/css/custom.scss")
+        }
+      }
+    ]
+  ]
+};
