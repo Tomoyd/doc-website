@@ -39,11 +39,11 @@ module.exports = {
           items: [
             {
               label: "文档指南",
-              to: "JavaScript"
+              to: "docs/"
             },
             {
               label: "说明",
-              to: "docs/doc2/"
+              to: "docs/"
             }
           ]
         },
