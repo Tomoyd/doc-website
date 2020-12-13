@@ -88,12 +88,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/tomoyd.github.io/master/"
+          editUrl: "https://github.com/Tomoyd/doc-website/tree/master"
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/tomoyd.github.io/master/blog"
+          editUrl: "https://github.com/Tomoyd/doc-website/tree/master"
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss")
