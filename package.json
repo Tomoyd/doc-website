@@ -9,7 +9,8 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "clear": "docusaurus clear"
+    "clear": "docusaurus clear",
+    "git": "GIT_USER=tomoyd yarn deploy"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.69",
