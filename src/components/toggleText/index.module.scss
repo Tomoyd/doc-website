@@ -1,0 +1,44 @@
+.text {
+  color: #212121;
+  line-height: 20px;
+  font-size: 16px;
+  position: relative;
+  background-color: #fff;
+}
+
+.content {
+  display: inline;
+}
+
+.ellipsis {
+  max-height: 40px;
+  overflow: hidden;
+  display: block;
+}
+
+.moreText {
+  color: #999;
+}
+.dot {
+  color: #212121;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 2px;
+}
+.expended {
+  float: right;
+  .arrow {
+    transform: rotateZ(-90deg);
+  }
+}
+
+.folded {
+  min-width: 64px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
