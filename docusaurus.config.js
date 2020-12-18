@@ -25,6 +25,11 @@ module.exports = {
         },
         { to: "blog", label: "博客", position: "left" },
         {
+          to: "demo/",
+          label: "demo",
+          position: "right"
+        },
+        {
           href: "https://github.com/Tomoyd",
           label: "GitHub",
           position: "right"
@@ -38,8 +43,8 @@ module.exports = {
           title: "文档",
           items: [
             {
-              label: "文档指南",
-              to: "docs/"
+              label: "demo",
+              to: "demo/"
             },
             {
               label: "说明",

@@ -6,41 +6,64 @@ const toggleMapText = {
   true: "收起",
   false: "展开"
 };
+
+const parseSecondContent = (target, content) => {
+  const dom = target || {};
+  const contentStr = content || "";
+  let i = 3;
+  dom.innerText = contentStr.substr(0, i);
+  while (i <= contentStr.length && dom.scrollHeight <= 20) {
+    i += 1;
+    dom.innerText = contentStr.substr(0, i);
+  }
+  dom.innerText = contentStr.substr(0, i - 1);
+  return i - 1;
+};
+
 const ToggleText = ({ children }) => {
   const [hasMore, setHasMore] = useState(false);
   const [isExpanded, serExpanded] = useState(false);
+  const [secStr, setSecondStr] = useState("");
   const content = useRef();
 
   useEffect(() => {
-    console.log(
-      "content.current.scrollHeight :>> ",
-      content.current.scrollHeight
-    );
-    if (content.current.scrollHeight > 32) {
-      setHasMore(true);
-    }
+    const handleResize = () => {
+      const dom = content.current.firstChild;
+      dom.innerText = children;
+      if (dom.scrollHeight > 40) {
+        setHasMore(true);
+        const secStart = parseSecondContent(dom, children);
+        setSecondStr(children.substr(secStart));
+      }
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize, false);
+    return () => {
+      window.removeEventListener("resize", handleResize, false);
+    };
   }, []);
   return (
-    <div className={styles.text}>
-      <div
-        ref={content}
-        className={clsx(styles.content, { [styles.ellipsis]: !isExpanded })}
-      >
-        {children}
-      </div>
+    <div ref={content} className={styles.text}>
+      <div className={styles.content}>{children}</div>
       {hasMore && (
-        <div
-          onClick={() => {
-            serExpanded(!isExpanded);
-          }}
-          className={clsx(styles.moreText, {
-            [styles.expended]: isExpanded,
-            [styles.folded]: !isExpanded
-          })}
-        >
-          {!isExpanded && <span className={styles.dot}>...</span>}
-          {[toggleMapText[isExpanded]]}
-          <span className={styles.arrow}>{">"}</span>
+        <div className={clsx({ [styles.flex]: !isExpanded })}>
+          <div
+            className={clsx(styles.content, { [styles.ellipsis]: !isExpanded })}
+          >
+            {secStr}
+          </div>
+          <div
+            onClick={() => {
+              serExpanded(!isExpanded);
+            }}
+            className={clsx(styles.moreText, {
+              [styles.expended]: isExpanded,
+              [styles.folded]: !isExpanded
+            })}
+          >
+            {[toggleMapText[isExpanded]]}
+            <span className={styles.arrow}>{">"}</span>
+          </div>
         </div>
       )}
     </div>

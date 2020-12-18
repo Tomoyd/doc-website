@@ -7,13 +7,15 @@
 }
 
 .content {
-  display: inline;
+  word-break: break-all;
 }
 
 .ellipsis {
-  max-height: 40px;
+  flex: 1;
+  text-overflow: ellipsis;
   overflow: hidden;
   display: block;
+  white-space: nowrap;
 }
 
 .moreText {
@@ -34,11 +36,8 @@
   }
 }
 
-.folded {
-  min-width: 64px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  background-color: #ffffff;
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
