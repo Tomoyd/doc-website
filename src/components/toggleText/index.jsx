@@ -48,7 +48,10 @@ const ToggleText = ({ children }) => {
       {hasMore && (
         <div className={clsx({ [styles.flex]: !isExpanded })}>
           <div
-            className={clsx(styles.content, { [styles.ellipsis]: !isExpanded })}
+            className={clsx(styles.content, {
+              [styles.ellipsis]: !isExpanded,
+              [styles.inline]: isExpanded
+            })}
           >
             {secStr}
           </div>
