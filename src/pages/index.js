@@ -6,7 +6,8 @@ import clsx from "clsx";
 import React from "react";
 import sidebars from "../../sidebars";
 import styles from "./styles.module.scss";
-console.log("sidebars", sidebars.someSidebar);
+
+console.log("icons", Logo);
 const bars = sidebars.someSidebar;
 const keys = Object.keys(bars);
 const features = [
