@@ -6,6 +6,8 @@
  */
 
 /* You can override the default Infima variables here. */
+
+@import url(http://at.alicdn.com/t/font_2281314_azpv0n9z69u.css);
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -23,15 +25,4 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
-}
-
-@font-face {
-  font-family: "iconfont"; /* project id 2281314 */
-  src: url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.eot");
-  src: url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.eot?#iefix")
-      format("embedded-opentype"),
-    url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.woff2") format("woff2"),
-    url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.woff") format("woff"),
-    url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.ttf") format("truetype"),
-    url("//at.alicdn.com/t/font_2281314_azpv0n9z69u.svg#iconfont") format("svg");
 }

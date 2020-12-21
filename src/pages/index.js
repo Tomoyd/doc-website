@@ -5,9 +5,9 @@ import Layout from "@theme/Layout";
 import clsx from "clsx";
 import React from "react";
 import sidebars from "../../sidebars";
+import Icon from "../components/icon";
 import styles from "./styles.module.scss";
 
-console.log("icons", Logo);
 const bars = sidebars.someSidebar;
 const keys = Object.keys(bars);
 const features = [
@@ -55,6 +55,7 @@ function Home() {
     <Layout title={`${siteConfig.title}`} description='Tomoyd的個人網站'>
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className='container'>
+          <Icon type='iconhuaban88'></Icon>
           <h1 className='hero__title'>{siteConfig.title}</h1>
           <p className='hero__subtitle'>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
