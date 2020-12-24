@@ -12,22 +12,40 @@ const bars = sidebars.someSidebar;
 const keys = Object.keys(bars);
 const features = [
   {
-    title: "前端技术",
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: "JS",
+    imageUrl: "img/javascript.svg",
     description: <>JavaScript，CSS，H5，前端框架Vue，React</>,
     to: "docs/"
   },
   {
-    title: "前端工程",
-    imageUrl: "img/undraw_docusaurus_tree.svg",
-    description: <>前端工程化建设，webpack等技术</>,
-    to: "docs/" + bars[keys[1]][0]
+    title: "TS",
+    imageUrl: "img/typescript.svg",
+    description: <>JavaScript，CSS，H5，前端框架Vue，React</>,
+    to: "docs/"
   },
   {
-    title: "杂谈",
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: "React",
+    imageUrl: "img/react.svg",
+    description: <>前端工程化建设，webpack等技术</>,
+    to: "docs/react"
+  },
+  {
+    title: "vue",
+    imageUrl: "img/vue.svg",
     description: <>一些有趣的文章杂谈.</>,
-    to: "docs/" + bars[keys[2]][0]
+    to: "docs/vue"
+  },
+  {
+    title: "前端工程",
+    imageUrl: "img/Webpack.svg",
+    description: <>一些有趣的文章杂谈.</>,
+    to: "docs/mdx"
+  },
+  {
+    title: "CSS",
+    imageUrl: "img/css3.svg",
+    description: <>css.</>,
+    to: "docs/css"
   }
 ];
 
