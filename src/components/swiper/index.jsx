@@ -9,9 +9,11 @@ const ReactSwiper = ({ children, className }) => {
   const ref = useRef();
   useEffect(() => {
     const swiper = new Swiper(ref.current, {
+      // updateOnWindowResize: true,
       updateOnWindowResize: true,
       initialSlide: 0,
-      slidesPerView: "auto"
+      slidesPerView: "auto",
+      spaceBetween: 15
       //   autoplay: true,
       //   loop: true
     });

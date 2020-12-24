@@ -73,15 +73,11 @@ function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className='container'>
-              {/* <div > */}
-              <ReactSwiper className='row'>
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </ReactSwiper>
-              {/* </div> */}
-            </div>
+            <ReactSwiper className={styles.row}>
+              {features.map((props, idx) => (
+                <Feature key={idx} {...props} />
+              ))}
+            </ReactSwiper>
           </section>
         )}
       </main>
