@@ -5,10 +5,16 @@
   position: relative;
   background-color: #fff;
   overflow: hidden;
+  max-height: 40px;
+  transition: all 0.5s;
 }
 
+.textExpend {
+  max-height: 300px;
+}
 .content {
   word-break: break-all;
+  transition: all 0.5s;
 }
 
 .ellipsis {
@@ -33,6 +39,7 @@
   display: inline-block;
   margin-left: 2px;
 }
+
 .expended {
   float: right;
   .arrow {

@@ -43,7 +43,10 @@ const ToggleText = ({ children }) => {
     };
   }, []);
   return (
-    <div ref={content} className={styles.text}>
+    <div
+      ref={content}
+      className={clsx(styles.text, { [styles.textExpend]: isExpanded })}
+    >
       <div className={styles.content}>{children}</div>
       {hasMore && (
         <div className={clsx({ [styles.flex]: !isExpanded })}>
