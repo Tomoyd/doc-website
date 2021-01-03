@@ -1,0 +1,42 @@
+.container {
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.tabItem {
+  white-space: nowrap;
+}
+
+.tabItem + .tabItem {
+  margin-left: 10px;
+}
+
+.active {
+  color: #ee0a24;
+}
+.tabIndictor {
+  top: 100%;
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  border-radius: 3px;
+  background-color: #ee0a24;
+  transition-duration: 0.3s;
+}
+
+.indictorHeight {
+  height: 2px;
+  flex-shrink: 0;
+  background-color: transparent;
+  width: 100px;
+}
