@@ -4,6 +4,7 @@ const transformToValidPageId = (ids, dir) =>
 const FRONT_BASE = "front_base";
 module.exports = {
   someSidebar: {
+    开始: ["home"],
     前端技术: [
       { 前端基础: transformToValidPageId(["js", "css", "html5"], FRONT_BASE) },
       "React",

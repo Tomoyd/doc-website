@@ -2,7 +2,7 @@
 id: js
 title: JavaScript
 sidebar_label: JavaScript
-slug: /
+slug: /js
 ---
 
 ### 错误捕获
