@@ -1,8 +1,8 @@
 ---
-id: CSS
-title: CSS
-sidebar_label: CSS
-slug: /css
+id: js
+title: JavaScript
+sidebar_label: JavaScript
+slug: /
 ---
 
 ### 错误捕获

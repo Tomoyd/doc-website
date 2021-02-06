@@ -9,7 +9,7 @@ import ReactSwiper from "../components/swiper";
 import styles from "./styles.module.scss";
 
 const bars = sidebars.someSidebar;
-const keys = Object.keys(bars);
+const keys = Object?.keys(bars);
 const features = [
   {
     title: "JS",

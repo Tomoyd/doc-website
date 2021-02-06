@@ -10,7 +10,7 @@
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear",
-    "git": "GIT_USER=tomoyd yarn deploy"
+    "git": "cmd /C \"set \"GIT_USER=tomoyd\"&& set CURRENT_BRANCH=master && set USE_SSH=true && yarn deploy\""
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-alpha.69",
@@ -33,5 +33,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.13"
   }
 }

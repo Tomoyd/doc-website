@@ -2,7 +2,6 @@
 id: html5
 title: HTML5
 sidebar_label: html5
-slug: /html5
 ---
 
 ### 错误捕获
