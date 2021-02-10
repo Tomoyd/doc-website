@@ -8,6 +8,7 @@ module.exports = {
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/tomo.ico",
+  themes: ["@docusaurus/theme-live-codeblock"],
   // Usually your repo name.
   themeConfig: {
     navbar: {
