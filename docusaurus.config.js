@@ -47,8 +47,8 @@ module.exports = {
               to: "demo/"
             },
             {
-              label: "说明",
-              to: "docs/"
+              label: "关于我",
+              to: "aboutme/"
             }
           ]
         },
