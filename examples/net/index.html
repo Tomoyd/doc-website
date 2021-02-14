@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function handleResponse(response) {
+        console.log("response", response);
+      }
+    </script>
+    <button onclick="getData()">fetch</button>
+    <button onclick="sendJSON({content:123})">fetch sendJSON</button>
+    <button onclick="postFormData({content:123})">fetch postFormData</button>
+    <button onclick="fetchPostFile()">fetch fetchPostFile</button>
+    <button onclick="loadImage()">fetch loadImage</button>
+    <img />
+    <button onclick="sendData()">send</button>
+    <button onclick="postData()">post</button>
+    <input type="file" multiple />
+    <form id="form1">
+      <input name="username" value="user01" />
+      <input name="age" value="10" />
+    </form>
+    <script src="./xhr.js?callback=handleResponse"></script>
+    <script src="fetch.js"></script>
+  </body>
+</html>
