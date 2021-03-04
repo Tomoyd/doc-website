@@ -3,6 +3,7 @@ const transformToValidPageId = (ids, dir) =>
 
 const FRONT_BASE = "front_base";
 const TS = "ts";
+const DEPLOY = "deploy";
 module.exports = {
   someSidebar: {
     开始: ["home"],
@@ -12,7 +13,7 @@ module.exports = {
       "Vue",
       { TS: transformToValidPageId(["base"], TS) }
     ],
-    部署: ["nginx", "webHook"],
+    部署: transformToValidPageId(["nginx", "webHook"], DEPLOY),
     前端工程: ["mdx"],
     杂谈: ["speaking"]
   }

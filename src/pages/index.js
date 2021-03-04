@@ -21,7 +21,7 @@ const features = [
     title: "TS",
     imageUrl: "img/typescript.svg",
     description: <>JavaScript，CSS，H5，前端框架Vue，React</>,
-    to: "docs/"
+    to: "docs/ts/base"
   },
   {
     title: "React",
