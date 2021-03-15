@@ -1,33 +1,32 @@
 ---
-slug: js/错误处理
-title: 一种基于事件回调的错误处理方式
+slug: http/https
+title: https 如何工作的
 author: huy
-author_title: 简单的东西往往蕴含着巧妙
+author_title: 安全越来越重要
 author_url: https://tomoyd.github.io
 # author_image_url: https://tomoyd.github.io/img/tomo.png
-tags: [js, error]
+tags: [https, 签名证书]
 ---
 
-#### 需求
+#### 非对称加密
 
-满足以下三点：
+1. 经过 A 公钥加密的信息，只有用 A 私钥解密
+2. 有公钥的一方，可以确认信息由私钥加密的
 
-- 错误能被捕获
-- 错误能配 chrome 浏览器 debug 到
-- 错误不能中断 js 运行
+#### 背景
 
-其基本思路是，在事件回调中抛出的异常不会中断程序的运行，且能被 onerror 捕获到，且在 chrome 中可以 debug 到
+http 数据传输时明文传输的，会导致数据被拦截后不安全
 
-```javascript
-const startEvent = new Event("startup");
-const toolEl = document.createElement("div");
-function handleStartup() {
-  throw "test";
-}
-window.onerror = (e) => {
-  // handleError
-  console.log({ e });
-};
-toolEl.addEventListener("startup", handleStartup, false);
-toolEl.dispatch(startEvent);
-```
+https 基于 ssl 加密后的通道进行运行的，数据传输是安全
+
+1. 浏览器发送一个资源请求
+2. 服务器发送公钥和 Global sign 签名证书
+3. 浏览器认识 Global sign 的签名证书，知道你是要找到服务，用公钥加密随机密钥给服务器
+4. 服务器我用私钥解密到了你的随机密钥，只有我们两个知道随机密钥，以后的数据传输都用你给的随机密钥对称加密进行传输
+   > 对称加密消耗要少
+
+#### 签字证书
+
+1. 服务器创建了私钥和公钥，找签字机构进行签字认证
+2. 签字机构有自己的私钥和公钥 进行签字颁发，所有有公钥的都知道我给你签字了，认识我的证书
+3. 一般浏览器都有签字机构的公钥
