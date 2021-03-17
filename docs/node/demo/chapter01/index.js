@@ -16,3 +16,16 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}`);
 });
+
+// process.on("SIGTERM", () => {
+//   console.log("进程已终止 :>> ");
+//   sever.close(() => {
+//     console.log("进程已终止 :>> ");
+//   });
+// });
+
+// setTimeout(() => {
+//   process.kill(process.pid, "SIGTERM");
+// }, 2000);
+
+console.log("process.env :>> ", process.argv);
