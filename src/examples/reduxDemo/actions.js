@@ -14,7 +14,7 @@ export function toggleTodo(index) {
 }
 
 export function setVisibilityFilter(filter) {
-  return filter;
+  return { type: SET_VISIBILITY_FILTER, filter };
 }
 
 export const VisibilityFilters = {

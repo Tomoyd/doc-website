@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import axios from "../../../../examples/axios";
+import axios from "../../../examples/axios";
 
 const TestXHR = () => {
   useEffect(() => {
