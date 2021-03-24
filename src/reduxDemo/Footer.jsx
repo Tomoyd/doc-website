@@ -1,5 +1,5 @@
 import React from "react";
-import { VisibilityFilters } from "../../../examples/reduxDemo/actions";
+import { VisibilityFilters } from "../examples/reduxDemo/actions";
 import FilterLink from "./FilterLink";
 
 const FilterFooter = () => {

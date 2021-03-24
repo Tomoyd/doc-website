@@ -26,11 +26,11 @@ const store = createStore(
 
 // 警告：这只是一种“单纯”的实现方式！
 // 这 *并不是* Redux 的 API.
-function applyMiddleware22(store, middlewares) {
-  middlewares = middlewares.slice();
-  middlewares.reverse();
-  let dispatch = store.dispatch;
-  middlewares.forEach((middleware) => (dispatch = middleware(store)(dispatch)));
-  return Object.assign({}, store, { dispatch });
-}
+// function applyMiddleware22(store, middlewares) {
+//   middlewares = middlewares.slice();
+//   middlewares.reverse();
+//   let dispatch = store.dispatch;
+//   middlewares.forEach((middleware) => (dispatch = middleware(store)(dispatch)));
+//   return Object.assign({}, store, { dispatch });
+// }
 export default store;

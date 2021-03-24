@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import store from "../../../examples/reduxDemo";
+import store from "../examples/reduxDemo";
 import FilterFooter from "./Footer";
 import VisibleTodoList from "./VisibleTodoList";
 
