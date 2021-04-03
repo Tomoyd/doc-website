@@ -17,7 +17,7 @@ function reverseHOC(ParentComponent) {
   return class WrapComponent extends ParentComponent {
     constructor(props) {
       super(props);
-      console.log("super.state :>> ", super.state);
+
       console.log("this.state :>> ", this.state);
     }
 
