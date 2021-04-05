@@ -10,6 +10,10 @@ module.exports = {
   favicon: "img/tomo.ico",
   themes: ["@docusaurus/theme-live-codeblock"],
   // Usually your repo name.
+  i18n: {
+    defaultLocale: "zh",
+    locales: ["zh"],
+  },
   themeConfig: {
     navbar: {
       title: "Tomoyd",
@@ -94,12 +98,12 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/Tomoyd/doc-website/tree/master",
+          // editUrl: "https://github.com/Tomoyd/doc-website/tree/master",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: "https://github.com/Tomoyd/doc-website/tree/master",
+          // editUrl: "https://github.com/Tomoyd/doc-website/tree/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.scss"),

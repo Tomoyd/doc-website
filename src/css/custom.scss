@@ -19,6 +19,11 @@
   --ifm-code-font-size: 95%;
 }
 
+.hero--primary {
+  --ifm-hero-background-color: #97bcd5;
+  --ifm-hero-text-color: var(--ifm-font-color-base-inverse);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
 
