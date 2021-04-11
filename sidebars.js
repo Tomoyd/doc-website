@@ -11,10 +11,10 @@ module.exports = {
       { 前端基础: transformToValidPageId(["js", "css", "html5"], FRONT_BASE) },
       "React",
       "Vue",
-      { TS: transformToValidPageId(["base"], TS) }
+      { TS: transformToValidPageId(["base"], TS) },
     ],
     部署: transformToValidPageId(["nginx", "webHook"], DEPLOY),
-    前端工程: ["mdx"],
-    杂谈: ["speaking"]
-  }
+    前端工程: transformToValidPageId(["webpack", "mdx"], "webpack"),
+    杂谈: ["speaking"],
+  },
 };
