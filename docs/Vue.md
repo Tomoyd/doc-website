@@ -19,3 +19,6 @@ title: Vue
 1. 把一个 JavaScript 对象作为 data 选项传递给应用或组件的时候
 2. 遍历所有 data 的 property 并将其带有 getter setter 的 Proxy
 3. setter 方法一方面保证相应式，另一方面也会通知侦听器实例
+
+#### 组合API
+setup
