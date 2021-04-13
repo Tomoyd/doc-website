@@ -20,5 +20,17 @@ title: Vue
 2. 遍历所有 data 的 property 并将其带有 getter setter 的 Proxy
 3. setter 方法一方面保证相应式，另一方面也会通知侦听器实例
 
-#### 组合API
+#### 组合 API
+
 setup
+
+#### ref 和 reactive
+
+Ref 通常用来处理基本类型数据 通过 getter setter
+reactive 用来处理对象 通过代理方式
+Ref 中传入对象或数组，会自动的将其 value 转为 Proxy 的对象，经过了 reactive 的处理
+
+#### 计算属性与监视
+
+computed();
+watchEffect
