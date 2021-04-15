@@ -38,3 +38,23 @@ toRefs();
 toRef()
 
 #### Vue3 将响应式更加灵活写法，便于逻辑复用
+
+```javascript
+function myReactive(target) {
+  if (typeof target === "object") {
+    if (Array.isArray(target)) {
+      target.forEach((item, index) => {
+        target[index] = myReactive(item);
+      });
+    } else {
+      Object.keys(target).forEach((key) => {
+        target[key] = myReactive(target[key]);
+      });
+    }
+    return new Proxy(target, handle);
+  }
+  return target;
+}
+
+export default myReactive;
+```
